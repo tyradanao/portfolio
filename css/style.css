@@ -123,6 +123,9 @@ img {
     /* width: 1320px; */
     margin: 0 auto;
 }
+img.self {
+    border-radius: 10px;
+}
 
 section {
     padding: 6em 0;

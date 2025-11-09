@@ -3,10 +3,10 @@ Bootstrap Variables Override
 **********************************/
 :root {
     /* Replace your primary color from your UI Kit */
-    --bs-primary: #ff7900;
+    --bs-primary: #B36A47;
 
     /* Replace your secondary color from your UI Kit  */
-    --secondary-color: #f9d583;
+    --secondary-color: #FAF3D8;
 
     /* Replace the main body font from your UI Kit */
     --bs-font-sans-serif: 'Fredoka', verdana, sans-serif;
@@ -26,13 +26,14 @@ Global Styles and UI Components
 
     /* Optional: Add inner spacing to the navbar */
     padding: 1rem;
+    background-color: var(--bs-primary);
 }
 
 footer {
     /* Change footer background color */
     background-color: var(--bs-white);
     /* Optional: Change footer text color to white using variable */
-    color: var(--bs-dark);
+    color: var(--secondary-color);
     /* Optional: Center footer elements */
     text-align: center;
 }
@@ -74,15 +75,18 @@ h6 {
     letter-spacing: 0.0rem;
     /* Optional: Adjust font-weight to all headings */
     font-weight: 800;
+    color: #B36A47;
 }
 
 h2 {
     /* Optional: Adjust font-size of heading 2 */
     font-size: 2rem;
+    color: #B36A47;
 }
 
 p {
     font-family: var(--bs-body-font);
+    color: #B36A47;
 }
 
 .display-1 {
@@ -91,6 +95,8 @@ p {
     font-size: 4.5rem;
     line-height: 100%;
     letter-spacing: -0.2rem;
+    color: #B36A47;
+
 }
 
 .display-2 {
@@ -99,6 +105,7 @@ p {
     font-size: 2.75rem;
     line-height: 100%;
     letter-spacing: -0.2rem;
+    color: #B36A47;
 }
 
 .kicker {
@@ -106,6 +113,7 @@ p {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.25rem;
+    color: #B36A47;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -114,6 +122,7 @@ p {
     /* Optional: Customize responsive style for display-1 on small devices and larger */
     .display-1 {
         font-size: 4rem;
+        color: #B36A47;
     }
 }
 
@@ -125,10 +134,11 @@ img {
 .hero {
     /* width: 1320px; */
     margin: 0 auto;
+    background-color: #FAF3D8;
 }
 
 img.self {
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 ul li {
@@ -143,14 +153,16 @@ ul li {
 
 section {
     padding: 6em 0;
+
 }
 
 footer {
-    background-color: var(--secondary-color);
+    background-color: var(--bs-primary);
+    color: #FAF3D8;
 }
 
 svg {
-    color: #333;
+    color: #B36A47;
     width: 25px;
     height: 25px;
     padding: .2em;

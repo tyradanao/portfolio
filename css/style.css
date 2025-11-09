@@ -48,17 +48,27 @@ footer .footer-social {
     display: flex;
     justify-self: center;
 }
+a.btn.btn-primary.btn-hero, a.btn.btn-primary.btn-latest {
+    background-color: var(--bs-primary);
+    color: var(--secondary-color);
+}
+a.btn.btn-primary.btn-hero:hover, a.btn.btn-primary.btn-latest:hover {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--bs-primary);
+}
 
 .btn-primary {
     /* Optional: Change primary button background color to primary color */
-    background-color: var(--bs-primary);
+    background-color: var(--secondary-color);
     /* Optional: Remove primary button outline */
     border: none;
+    color: var(--bs-primary);
 }
 
 .btn-primary:hover {
     /* Optional: Change primary button hover state background and text color  */
-    background-color: var(--secondary-color);
+    background-color: var(--bs-primary);
     color: var(--bs-dark);
 }
 
@@ -75,18 +85,18 @@ h6 {
     letter-spacing: 0.0rem;
     /* Optional: Adjust font-weight to all headings */
     font-weight: 800;
-    color: #B36A47;
+    color: var(--bs-primary);
 }
 
 h2 {
     /* Optional: Adjust font-size of heading 2 */
     font-size: 2rem;
-    color: #B36A47;
+    color: var(--bs-primary);
 }
 
 p {
     font-family: var(--bs-body-font);
-    color: #B36A47;
+    color: var(--bs-primary);
 }
 
 .display-1 {
@@ -115,7 +125,10 @@ p {
     font-size: 1.25rem;
     color: #B36A47;
 }
-
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 
@@ -151,6 +164,10 @@ ul li {
     columns: 2;
 }
 
+.py-3 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 section {
     padding: 6em 0;
 
@@ -340,7 +357,6 @@ svg {
         order: 1;
     }
 }
-
 @media (min-width: 768px) {
     .social-links {
         display: flex;
@@ -350,6 +366,41 @@ svg {
     }
 }
 
+.card-bg {
+    background-color: var(--bs-primary);
+    padding: 2em;
+    border-radius: 10px;
+}
+
 .card {
+    background-color: var(--bs-primary);
     --bs-card-border-width: 1px solid white;
+    --bs-card-spacer-y: 0;
+    --bs-card-spacer-x: 0:
+}
+
+.no-card-bg {
+    background-color: var(--secondary-color);
+}
+
+.no-card-bg h3{
+    color: var(--bs-primary)
+}
+
+.card-bg h3, .card-bg h4 {
+    padding: .5em 0;
+    color: var(--secondary-color);
+}
+
+
+.card-bg p {
+    padding: 0;
+    color: var(--secondary-color);
+}
+
+#latest-update {
+    background-color: var(--secondary-color);
+}
+footer h3, footer h4, footer p {
+    color: var(--secondary-color);
 }

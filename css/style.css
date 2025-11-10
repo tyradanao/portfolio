@@ -126,7 +126,7 @@ p {
     color: #B36A47;
 }
 .container {
-    width: 1000px;
+    width: 1200px;
     margin: 0 auto;
 }
 /* Small devices (landscape phones, 576px and up) */
@@ -210,6 +210,7 @@ svg {
 .row2+.row2 {
     margin-top: var(--gridgap2);
     margin-bottom: var(--gridgap2);
+    display: flex;
 }
 
 @media (min-width: 768px) {
@@ -217,7 +218,7 @@ svg {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: var(--gridgap);
-        /* place-items: center; */
+        place-items: center;
     }
 
     /* COMMONLY USED SEMANTIC COLUMN WIDTHS */
@@ -403,4 +404,13 @@ svg {
 }
 footer h3, footer h4, footer p {
     color: var(--secondary-color);
+}
+.hrline {
+    padding: 2em 0;
+    border-top: 5px solid var(--secondary-color);
+    /* border-bottom: 5px solid var(--secondary-color); */
+}
+blockquote {
+    font-size: 1.5em;
+    /* border-top: 1em solid var(--secondary-color); */
 }
